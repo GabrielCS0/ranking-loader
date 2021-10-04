@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "Gabriel <gabrielcemp@gmail.com>",
+  "description": "NodeJs Rest API and GraphQL using Clean Architecture, Typescript and Design Patterns",
   "license": "MIT",
   "scripts": {
     "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored",
-    "start": "node dist/server.js",
-    "dev": "tsnd --respawn --transpile-only --ignore-watch node_modules --no-notify src/server.ts"
+    "start": "node dist/main/server.js",
+    "dev": "tsnd -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify src/main/server.ts"
   },
   "dependencies": {
     "express": "^4.17.1"
@@ -22,6 +23,7 @@
     "@types/express": "^4.17.13",
     "@typescript-eslint/eslint-plugin": "^4.32.0",
     "@typescript-eslint/parser": "^4.32.0",
+    "babel-plugin-module-resolver": "^4.1.0",
     "babel-plugin-transform-typescript-metadata": "^0.3.2",
     "eslint": "^7.12.1",
     "eslint-config-prettier": "^8.3.0",
@@ -32,6 +34,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "prettier": "^2.4.1",
     "ts-node-dev": "^1.1.8",
+    "tsconfig-paths": "^3.11.0",
     "typescript": "^4.4.3"
   }
 }
