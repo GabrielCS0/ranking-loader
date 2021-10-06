@@ -17,14 +17,14 @@
     "emitDecoratorMetadata": true,                
     "skipLibCheck": true,                       
     "forceConsistentCasingInFileNames": true, 
-    "baseUrl": "./",      
-  },
-  "paths": {
-    "@data/*": "./src/data/*",
-    "@domain/*": "./src/domain/*",
-    "@infra/*": "./src/infra/*",
-    "@main/*": "./src/main/*",
-    "@presentation/*": "./src/presentation/*"
+    "baseUrl": "./",
+    "paths": {
+      "@data/*": ["./src/data/*"],
+      "@domain/*": ["./src/domain/*"],
+      "@infra/*": ["./src/infra/*"],
+      "@main/*": ["./src/main/*"],
+      "@presentation/*": ["./src/presentation/*"]
+    }    
   },
   "include": [
     "src/**/*"
